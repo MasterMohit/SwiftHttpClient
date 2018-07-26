@@ -15,7 +15,7 @@ struct Post:Codable {
     var body:String?
     
     
-    enum Keys:String,CodingKey {
+    enum CodingKeys:String,CodingKey {
         case userId,title,body
         case postId = "id"
     }

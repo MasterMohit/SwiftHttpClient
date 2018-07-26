@@ -36,7 +36,8 @@ class UserDetailsViewController: UIViewController {
                     DispatchQueue.main.async {
                         
                         if let user=self.user{
-                            let msg = " User name = "+user.name! + " Email = "+user.email!
+                            
+                            let msg = " User name = "+user.name! + " Company = "+(user.company?.name)!
                             
                             self.txvUserDetails.text = msg
 
